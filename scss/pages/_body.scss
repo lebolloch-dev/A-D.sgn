@@ -1,0 +1,22 @@
+@import "../outils/variables";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+#page {
+  max-width: 1600px;
+  margin: auto;
+}
