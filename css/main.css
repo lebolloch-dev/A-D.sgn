@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0px;
+  background: #f5f5f5;
 }
 
 * {
@@ -116,11 +117,13 @@ header nav ul li a i {
 }
 
 #profile #logo {
+  border-radius: 200px;
   margin: auto;
-  width: 500px;
+  width: 400px;
 }
 
 #profile #logo #AD-logo {
+  border-radius: 200px;
   width: 100%;
   -webkit-transition: all ease-in-out 1s 0.2s;
   transition: all ease-in-out 1s 0.2s;
@@ -210,9 +213,9 @@ section h2 {
   text-align: center;
   margin-top: 0%;
   margin-bottom: 5px;
-  color: #232c33;
+  color: #023859;
   font-family: "Poppins", sans-serif;
-  width: 506px;
+  max-width: 506px;
 }
 
 section h2:after {
@@ -226,6 +229,7 @@ section h2:after {
 }
 
 section h3 {
+  color: #023859;
   font-weight: 500;
   text-align: center;
   font-size: 2.2em;
@@ -233,9 +237,7 @@ section h3 {
   font-family: "Poppins", sans-serif;
 }
 
-section #home-product,
-section #light,
-section #graphism {
+section .style-pp {
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,21 +248,16 @@ section #graphism {
       justify-content: space-around;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  width: 1150px;
-  height: 600px;
+  max-width: 1150px;
 }
 
-section #light {
-  height: 880px;
+section a {
+  max-width: 330px;
 }
 
-section #graphism {
-  height: 300px;
-  width: 780px;
-}
-
-section img {
-  width: 330px;
+section a img {
+  width: 100%;
+  margin-bottom: 60px;
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
   border-radius: 50px;
@@ -270,7 +267,7 @@ section img {
   cursor: pointer;
 }
 
-section img:hover {
+section a img:hover {
   border-radius: 50px;
   background: #f5f5f5;
   /* box-shadow: inset 10px 10px 20px #afafaf, inset -10px -10px 20px #ffffff; */
@@ -278,7 +275,7 @@ section img:hover {
           box-shadow: none;
 }
 
-section img:active {
+section a img:active {
   border-radius: 50px;
   background: #f5f5f5;
   -webkit-box-shadow: inset 10px 10px 20px #d0d0d0, inset -10px -10px 20px #ffffff;
@@ -304,8 +301,6 @@ footer {
   background: #96c6d9;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  -webkit-box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
 }
 
 footer #copyright {
@@ -316,9 +311,20 @@ footer #copyright {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Poppins", sans-serif;
-  width: 100px;
+  width: 120px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #023859;
+}
+
+footer #copyright h6 {
+  font-size: 1em;
+}
+
+footer h6 a {
+  color: #023859;
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */

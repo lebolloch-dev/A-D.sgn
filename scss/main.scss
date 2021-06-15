@@ -79,10 +79,12 @@ header {
   box-shadow: 0px 2px 5px rgba($color: #000000, $alpha: 0.3);
 
   #logo {
+    border-radius: 200px;
     margin: auto;
-    width: 500px;
+    width: 400px;
 
     #AD-logo {
+      border-radius: 200px;
       width: 100%;
       transition: all ease-in-out 1s 0.2s;
 
@@ -169,9 +171,9 @@ section {
     text-align: center;
     margin-top: 0%;
     margin-bottom: 5px;
-    color: #232c33;
+    color: $color-primary;
     font-family: $title-font;
-    width: 506px;
+    max-width: 506px;
     &:after {
       position: absolute;
       content: "";
@@ -183,51 +185,46 @@ section {
     }
   }
   h3 {
+    color: $color-primary;
     font-weight: 500;
     text-align: center;
     font-size: 2.2em;
     margin-top: 100px;
     font-family: $title-font;
   }
-  #home-product,
-  #light,
-  #graphism {
+  .style-pp {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    width: 1150px;
-    height: 600px;
+    max-width: 1150px;
   }
 
-  #light {
-    height: 880px;
+  a {
+    max-width: 330px;
+    img {
+      width: 100%;
+      margin-bottom: 60px;
+      transition: 0.4s all;
+      border-radius: 50px;
+      background: #f5f5f5;
+      box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
+      cursor: pointer;
+      &:hover {
+        border-radius: 50px;
+        background: #f5f5f5;
+        /* box-shadow: inset 10px 10px 20px #afafaf, inset -10px -10px 20px #ffffff; */
+        box-shadow: none;
+      }
+      &:active {
+        border-radius: 50px;
+        background: #f5f5f5;
+        box-shadow: inset 10px 10px 20px #d0d0d0, inset -10px -10px 20px #ffffff;
+      }
+    }
   }
 
-  #graphism {
-    height: 300px;
-    width: 780px;
-  }
-  img {
-    width: 330px;
-    transition: 0.4s all;
-    border-radius: 50px;
-    background: #f5f5f5;
-    box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
-    cursor: pointer;
-    &:hover {
-      border-radius: 50px;
-      background: #f5f5f5;
-      /* box-shadow: inset 10px 10px 20px #afafaf, inset -10px -10px 20px #ffffff; */
-      box-shadow: none;
-    }
-    &:active {
-      border-radius: 50px;
-      background: #f5f5f5;
-      box-shadow: inset 10px 10px 20px #d0d0d0, inset -10px -10px 20px #ffffff;
-    }
-  }
   // #e0e0e0
   // #bebebe
 }
@@ -244,13 +241,23 @@ footer {
   background: $background-color;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  box-shadow: 0px -2px 5px rgba($color: #000000, $alpha: 0.3);
 
   #copyright {
     display: flex;
     align-items: center;
     font-family: $title-font;
-    width: 100px;
+    width: 120px;
     justify-content: space-between;
+    color: $color-primary;
+    h6 {
+      font-size: 1em;
+    }
+  }
+  h6 {
+    a {
+      color: $color-primary;
+      font-size: 1.2em;
+      font-family: $title-font;
+    }
   }
 }
