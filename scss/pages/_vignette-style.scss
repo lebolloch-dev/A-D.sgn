@@ -1,13 +1,11 @@
-@import "../../../scss/outils/variables";
-
-@import "../../../scss/pages/body";
+@import "../outils/variables";
 
 .page-pp {
   padding: 50px;
+
   header {
     z-index: 1000;
     position: fixed;
-
     a {
       color: $color-primary;
       font-size: 2.5em;
@@ -27,7 +25,7 @@
       margin-bottom: 5px;
       color: $color-primary;
       font-family: $title-font;
-      max-width: 300px;
+      max-width: 350px;
       &:after {
         position: absolute;
         content: "";
@@ -38,26 +36,25 @@
         background: $background-color;
       }
     }
+
     #info {
       padding: 20px;
       margin-top: 50px;
 
       h3 {
         color: $color-primary;
+
         text-align: center;
         font-size: 2em;
         font-weight: bold;
         font-family: $general-font;
       }
     }
-
     p {
       font-family: $general-font;
       text-align: center;
       color: $color-primary;
       font-size: 1.5em;
-      padding: 0px;
-      margin: 0px;
 
       a {
         color: $color-primary;
@@ -69,22 +66,14 @@
       }
     }
 
-    #n1 {
+    .img-style {
       margin: auto;
       margin-bottom: 50px;
       margin-top: 50px;
       max-width: 790px;
-      .img-style {
-        max-width: 790px;
-        margin-bottom: 50px;
-        img {
-          width: 100%;
-        }
+      img {
+        width: 100%;
       }
-    }
-
-    #description {
-      padding: 20px;
     }
 
     .delay1 {

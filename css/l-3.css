@@ -51,7 +51,7 @@ li {
   margin-bottom: 5px;
   color: #023859;
   font-family: "Poppins", sans-serif;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .page-pp section h2:after {
@@ -95,42 +95,15 @@ li {
   color: #025373;
 }
 
-.page-pp section #n1 {
+.page-pp section .img-style {
   margin: auto;
   margin-bottom: 50px;
   margin-top: 50px;
   max-width: 790px;
 }
 
-.page-pp section #n1 img {
+.page-pp section .img-style img {
   width: 100%;
-}
-
-.page-pp section #n2-3 {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.page-pp section #n2-3 #n2 {
-  max-width: 790px;
-}
-
-.page-pp section #n2-3 img {
-  margin-bottom: 50px;
-  max-width: 100%;
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.page-pp section #description {
-  padding: 20px;
 }
 
 .page-pp section .delay1 {
@@ -182,4 +155,4 @@ li {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=h&p-1.css.map */
+/*# sourceMappingURL=l-3.css.map */

@@ -13,30 +13,42 @@ header {
   font-family: $title-font;
   position: fixed;
   z-index: 1000;
-  border-bottom: 1px solid #025373;
+  top: 0px;
+  flex-wrap: wrap;
   box-shadow: 0px 2px 5px rgba($color: #000000, $alpha: 0.3);
 
-  h1 {
+  #titre {
     font-size: 2rem;
+    display: flex;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 410px;
+    justify-content: space-between;
+    align-items: center;
 
-    a {
-      color: $color-primary;
-      text-shadow: 1px 1px #558abb;
+    #AD-logo {
+      width: 50px;
+      border-radius: 25px;
+    }
+    #typo {
+      width: 350px;
+      height: 35px;
     }
   }
 
   nav {
+    width: 600px;
     ul {
+      padding: 0px;
       display: flex;
-      min-width: 450px;
+      width: 100%;
       justify-content: space-between;
       li {
         list-style-type: none;
         font-size: 1rem;
         font-weight: bolder;
-        letter-spacing: 0.25rem;
+        text-transform: uppercase;
 
         .list {
           &::after {
@@ -68,96 +80,91 @@ header {
   }
 }
 
-#profile {
-  position: relative;
-  display: flex;
-  background: $background-color;
-  height: 1050px;
-  z-index: 0;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  box-shadow: 0px 2px 5px rgba($color: #000000, $alpha: 0.3);
+// #profile {
+//   position: relative;
+//   display: flex;
+//   background: $background-color;
+//   height: 1050px;
+//   margin-top: 100px;
+//   border-bottom-left-radius: 50px;
+//   border-bottom-right-radius: 50px;
+//   box-shadow: 0px 2px 5px rgba($color: #000000, $alpha: 0.3);
+//   animation: wave 1.5s forwards ease-in-out;
+//   // opacity: 0;
 
-  #logo {
-    border-radius: 200px;
-    margin: auto;
-    width: 400px;
+//   @keyframes wave {
+//     0% {
+//       transform: translateY(-1050px);
+//       // opacity: 0;
+//     }
+//     100% {
+//       transform: translatex(0px);
+//       // opacity: 1;
+//     }
+//   }
 
-    #AD-logo {
-      border-radius: 200px;
-      width: 100%;
-      transition: all ease-in-out 1s 0.2s;
+//   #logo {
+//     border-radius: 200px;
+//     margin: auto;
+//     width: 400px;
 
-      &:hover {
-        opacity: 0;
-        transition: all ease-in-out 1s 0.2s;
-        transform: rotate(360deg);
-      }
-    }
+//     #AD-logo {
+//       border-radius: 200px;
+//       width: 100%;
+//       transition: all ease-in-out 1s 0.2s;
 
-    // &::after {
-    //   content: "I'm a french product designer, based in Montréal.\A I have a background in mechanical design and product design.\A \AI try, as much as possible, to design my projects with\A an eco-responsible approach, at all stages of the product life,\A and combine technology and aesthetics to achieve \Athe best result for my products.";
-    //   white-space: pre;
-    //   bottom: 450px;
-    //   left: 0px;
-    //   position: absolute;
-    //   font-family: "Cormorant", serif;
-    //   font-size: 1.5em;
+//       &:hover {
+//         opacity: 0;
+//         transition: all ease-in-out 1s 0.2s;
+//         transform: rotate(360deg);
+//       }
+//     }
 
-    //   color: #025373;
-    //   opacity: 0;
-    //   transition: all ease-in-out 1s 0.2s;
-    //   width: 500px;
-    //   // letter-spacing: 0.1rem;
-    // }
-    // &:hover::after {
-    //   transition: all 1s 0.2s ease-in-out;
-    //   opacity: 1;
-    // }
-    #description {
-      position: absolute;
-      left: 20px;
-      bottom: 380px;
-      width: 500px;
-      font-family: "Cormorant", serif;
-      font-size: 1.5em;
-      opacity: 0;
-    }
-    &:hover #description {
-      transition: all ease-in-out 1s 0.2s;
-      animation: text-transform ease-in-out forwards 2s;
-    }
-    @keyframes text-transform {
-      0% {
-        opacity: 0;
-        transform: scale(0);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-    #photo-id {
-      position: absolute;
-      bottom: -4px;
-      right: 0px;
-      opacity: 0;
-      img {
-        width: 500px;
-      }
-    }
-    &:hover #photo-id {
-      // transition: all ease-in-out 2s 0.5s;
-      animation: text-transform ease-in-out forwards 2s;
-      // opacity: 1;
-    }
-  }
-}
+//     #description {
+//       position: absolute;
+//       left: 20px;
+//       bottom: 380px;
+//       width: 500px;
+//       font-family: $general-font;
+//       font-size: 1.5em;
+//       color: $color-primary;
+//       transition: all ease-in-out 0.5s;
+
+//       visibility: hidden;
+//       opacity: 0;
+//     }
+//     &:hover #description {
+//       transition: all ease-in-out 2.5s;
+//       visibility: visible;
+//       opacity: 1;
+//     }
+//
+
+//     #photo-id {
+//       position: absolute;
+//       bottom: -4px;
+//       right: 0px;
+//       opacity: 0;
+//       transition: all ease-in-out 0.5s;
+//       visibility: hidden;
+//       img {
+//         width: 500px;
+//       }
+//     }
+//     &:hover #photo-id {
+//       // transition: all ease-in-out 2s 0.5s;
+//       opacity: 1;
+//       transition: all ease-in-out 2.5s;
+//       visibility: visible;
+//       // opacity: 1;
+//     }
+//   }
+// }
 
 section {
-  margin-top: -50px;
+  margin-top: 100px;
   padding-top: 60px;
-  padding-bottom: 80px;
+  // padding-bottom: 80px;
   // background: #e0e0e0;
   background: #f5f5f5;
 
@@ -173,7 +180,7 @@ section {
     margin-bottom: 5px;
     color: $color-primary;
     font-family: $title-font;
-    max-width: 506px;
+    max-width: 380px;
     &:after {
       position: absolute;
       content: "";
@@ -189,7 +196,7 @@ section {
     font-weight: 500;
     text-align: center;
     font-size: 2.2em;
-    margin-top: 100px;
+    padding-top: 100px;
     font-family: $title-font;
   }
   .style-pp {
@@ -214,7 +221,6 @@ section {
       &:hover {
         border-radius: 50px;
         background: #f5f5f5;
-        /* box-shadow: inset 10px 10px 20px #afafaf, inset -10px -10px 20px #ffffff; */
         box-shadow: none;
       }
       &:active {
@@ -229,18 +235,13 @@ section {
   // #bebebe
 }
 footer {
-  margin-top: -50px;
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  box-shadow: 0px -2px 5px rgba($color: #000000, $alpha: 0.3);
   align-items: center;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 60px;
-  padding-bottom: 40px;
   background: $background-color;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
 
   #copyright {
     display: flex;

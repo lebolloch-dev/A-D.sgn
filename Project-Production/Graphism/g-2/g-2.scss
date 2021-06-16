@@ -1,0 +1,13 @@
+@import "../../../scss/outils/variables";
+
+@import "../../../scss/pages/body";
+
+@import "../../../scss/pages/vignette-style";
+
+.page-pp {
+  section {
+    h2 {
+      max-width: 700px;
+    }
+  }
+}

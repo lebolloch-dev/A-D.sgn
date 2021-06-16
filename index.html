@@ -12,12 +12,14 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <!-- Cormoran font 500/bold -->
+
+    <!-- Baloo Tammudu 2 font 500/bold -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,700;1,300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/939b0326fe.js"
@@ -29,24 +31,32 @@
 
   <body>
     <header>
-      <h1><a href="#">Antoine Devictor</a></h1>
+      <div id="titre">
+        <img id="AD-logo" src="img/logo1.png" alt="logo designer" />
+        <img id="typo" src="img/Typologo.png" alt="" />
+      </div>
 
       <nav>
         <ul>
-          <li><a href="#pf" class="list">Project-Production</a></li>
-          <!-- <li><a href="#ga">Art Gallery</a></li>
-          <li><a href="#about">about</a></li> -->
+          <li><a href="#pf" class="list">Home Products</a></li>
+          <li><a href="#ancre" class="list">Lights</a></li>
+          <li><a href="#graphism" class="list">Graphism</a></li>
+          <li><a href="#about" class="list">About me</a></li>
           <li>
             <a href="https://www.instagram.com/a.d.sgn/?hl=fr" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
+              ><i class="fab fa-instagram"></i>
+            </a>
 
             <a
               href="https://www.linkedin.com/in/antoine-devictor-003b55113/"
               target="_blank"
             >
-              <i class="fab fa-linkedin"></i
-            ></a>
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="#" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+            </a>
 
             <a
               href="mailto:antoinedevictor7@gmail.com"
@@ -60,7 +70,7 @@
     </header>
 
     <div id="page">
-      <div id="profile">
+      <!-- <div id="profile">
         <div id="logo">
           <img id="AD-logo" src="img/logo1.png" alt="logo designer" />
           <div id="description">
@@ -84,12 +94,12 @@
             />
           </div>
         </div>
-      </div>
+      </div> -->
 
       <section id="pf">
-        <h2>Project-Production</h2>
+        <h2>Portfolio</h2>
 
-        <h3>Home & Product</h3>
+        <h3>Home Products</h3>
         <div id="home-product" class="style-pp">
           <a href="Project-Production/home-&-product/h&p-1/h&p-1.html">
             <img src="img/portfolio/ostraa.png"
@@ -97,66 +107,44 @@
           <a href="Project-Production/home-&-product/h&p-2/h&p-2.html">
             <img src="img/portfolio/modulara.png"
           /></a>
-          <a href="#"> <img src="img/portfolio/detritivorea.png" /></a>
+          <a href="Project-Production/home-&-product/h&p-3/h&p-3.html">
+            <img src="img/portfolio/detritivorea.png"
+          /></a>
           <a href="#"> <img src="img/portfolio/bikeaa.png" /></a>
         </div>
-        <h3>Light</h3>
+
+        <h3 id="ancre">Lights</h3>
         <div id="light" class="style-pp">
-          <a href="#"> <img src="img/portfolio/pixela.png" /></a>
-          <a href="#"> <img src="img/portfolio/lumena.png" /></a>
-          <a href="#"> <img src="img/portfolio/delicataa.png" /></a>
+          <a href="Project-Production/light/l-1/l-1.html">
+            <img src="img/portfolio/pixela.png"
+          /></a>
+          <a href="Project-Production/light/l-2/l-2.html">
+            <img src="img/portfolio/lumena.png"
+          /></a>
+          <a href="Project-Production/light/l-3/l-3.html">
+            <img src="img/portfolio/delicataa.png"
+          /></a>
           <a href="#"> <img src="img/portfolio/delicataa.png" /></a>
           <a href="#"> <img src="img/portfolio/delicataa.png" /></a>
           <a href="#"> <img src="img/portfolio/delicataa.png" /></a>
           <a href="#"> <img src="img/portfolio/delicataa.png" /></a>
         </div>
+
         <h3>Graphism</h3>
         <div id="graphism" class="style-pp">
-          <a href="#"> <img src="img/portfolio/labota.png" /></a>
-          <a href="#"> <img src="img/portfolio/bordeaux34.png" /></a>
+          <a href="Project-Production/Graphism/g-1/g-1.html">
+            <img src="img/portfolio/labota.png"
+          /></a>
+          <a href="Project-Production/Graphism/g-2/g-2.html">
+            <img src="img/portfolio/bordeaux34.png"
+          /></a>
         </div>
       </section>
 
-      <!-- <div id="ga">
-      <h1>Art Gallery</h1>
-      <img class="ligne" src="img/ligne2.png" alt="ligne de separation" />
-      <div id="mockup">
-        <img src="img/abstrait.png" />
-
-        <img src="img/mockup-dessin.png" alt="mockup dessin" />
-      </div>
-    </div> -->
-
-      <!--
-    <div id="about">
-      <h1>ABOUT</h1>
-      <img class="ligne" src="img/ligne.png" alt="ligne de separation" />
-      <div id="about1">
-        <p id="p1">
-          I'm a french product designer junior, based in Montréal.<br />
-          I have a background in <strong>mechanical design</strong> and
-          <strong>product design</strong> .
-        </p>
-
-        <p id="p2">
-          I try, as much as possible, to design my projects with an
-          eco-responsible approach, at all stages of the product life, and
-          combine technology and aesthetics to achieve the best result for my
-          products.
-        </p>
-      </div>
-    </div>
-    -->
       <footer>
         <div id="copyright">
           <h6>A.D Design</h6>
           <i class="far fa-copyright"></i>
-          <!-- <a
-          href="mailto:antoinedevictor7@gmail.com"
-          title="antoinedevictor7@gmail.com"
-          target="_blank"
-          >E-mail</a
-        > -->
         </div>
 
         <h6>
@@ -164,29 +152,6 @@
             >Develloped by lebolloch_dev</a
           >
         </h6>
-
-        <!-- <div id="reseau">
-        <a
-          href="https://www.linkedin.com/in/antoine-devictor-003b55113/"
-          target="_blank"
-          ><img
-            src="img/reseau/linkedin.png"
-            alt="icone linkedin"
-            title="Linkedin"
-        /></a>
-        <a href="https://www.instagram.com/a.d.sgn/?hl=fr" target="_blank"
-          ><img
-            src="img/reseau/insta.png"
-            alt="logo instagram"
-            title="Instagram"
-        /></a>
-        <a href="" target="_blank">
-          <img
-            src="img/reseau/facebook.png"
-            alt="logo facebook"
-            title="Facebook"
-        /></a>
-      </div> -->
       </footer>
     </div>
   </body>

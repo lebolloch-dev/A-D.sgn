@@ -1,0 +1,26 @@
+@import "../../../scss/outils/variables";
+
+@import "../../../scss/pages/body";
+
+@import "../../../scss/pages/vignette-style";
+
+.page-pp {
+  section {
+    h2 {
+      max-width: 250px;
+    }
+
+    .groupe {
+      max-width: 1550px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-bottom: 0px;
+      margin-top: 150px;
+      img {
+        max-width: 600px;
+        margin-bottom: 100px;
+      }
+    }
+  }
+}

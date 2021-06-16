@@ -67,10 +67,6 @@ li {
 .page-pp section #info {
   padding: 20px;
   margin-top: 50px;
-  background: #96c6d9;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .page-pp section #info h3 {
@@ -78,11 +74,11 @@ li {
   text-align: center;
   font-size: 2em;
   font-weight: bold;
-  font-family: "Baloo Tammudu 2", cursive;
+  font-family: "Mukta", sans-serif;
 }
 
 .page-pp section p {
-  font-family: "Baloo Tammudu 2", cursive;
+  font-family: "Mukta", sans-serif;
   text-align: center;
   color: #023859;
   font-size: 1.5em;
@@ -115,17 +111,10 @@ li {
 
 .page-pp section #n1 .img-style img {
   width: 100%;
-  border-radius: 50px;
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .page-pp section #description {
   padding: 20px;
-  background: #96c6d9;
-  border-radius: 25px;
-  -webkit-box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .page-pp section .delay1 {
