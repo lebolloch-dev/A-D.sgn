@@ -50,14 +50,14 @@ header {
 }
 
 header #titre {
-  font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-transform: uppercase;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
-  min-width: 410px;
+  width: 410px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -78,6 +78,14 @@ header #titre #typo {
 
 header nav {
   width: 600px;
+}
+
+header nav label {
+  display: none;
+}
+
+header nav input {
+  display: none;
 }
 
 header nav ul {
@@ -181,11 +189,11 @@ section .style-pp {
 
 section a {
   max-width: 330px;
+  margin-bottom: 60px;
 }
 
 section a img {
   width: 100%;
-  margin-bottom: 60px;
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
   border-radius: 50px;
@@ -221,9 +229,10 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
   background: #96c6d9;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer #copyright {
@@ -245,9 +254,130 @@ footer #copyright h6 {
   font-size: 1em;
 }
 
+footer h6 {
+  margin: 0px;
+}
+
 footer h6 a {
   color: #023859;
   font-size: 1.2em;
   font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 1049px) {
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section {
+    margin-top: 170px;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header #titre {
+    width: 365px;
+  }
+  header #titre #typo {
+    width: 300px;
+    height: 30px;
+  }
+  header nav {
+    width: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 20px;
+  }
+  header nav input[type="checkbox"]:checked + ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin-bottom: 20px;
+    z-index: 2;
+    width: 200px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav input[type="checkbox"] {
+    display: none;
+  }
+  header nav ul {
+    position: absolute;
+    display: none;
+    background-color: #96c6d9;
+    right: 0px;
+    bottom: -148px;
+    font-size: 1.9em;
+    -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+  header nav ul li .list::after {
+    display: none;
+  }
+  header nav label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav label i {
+    font-size: 1.5em;
+  }
+  section {
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  section h2 {
+    font-size: 2.5em;
+  }
+  section h3 {
+    font-size: 2em;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  footer #copyright {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding-left: 70px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  header #titre {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  header #titre #typo {
+    display: none;
+  }
+  header #titre #AD-logo {
+    width: 80px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

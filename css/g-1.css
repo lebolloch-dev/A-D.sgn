@@ -156,6 +156,24 @@ li {
   }
 }
 
+@media screen and (max-width: 655px) {
+  .page-pp {
+    padding: 20px;
+  }
+  .page-pp section {
+    margin-top: 50px;
+  }
+  .page-pp section h2 {
+    font-size: 2em;
+  }
+  .page-pp section #info h3 {
+    font-size: 1.4em;
+  }
+  .page-pp section p {
+    font-size: 1em;
+  }
+}
+
 .page-pp section h2 {
   max-width: 250px;
 }

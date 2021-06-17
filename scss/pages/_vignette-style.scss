@@ -103,3 +103,26 @@
     }
   }
 }
+
+@media screen and (max-width: 655px) {
+  .page-pp {
+    padding: 20px;
+
+    section {
+      margin-top: 50px;
+      h2 {
+        font-size: 2em;
+      }
+
+      #info {
+        h3 {
+          font-size: 1.4em;
+        }
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+}
