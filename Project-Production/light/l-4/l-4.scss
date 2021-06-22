@@ -14,14 +14,25 @@
         width: 100%;
       }
     }
-
-    #n1 {
-      max-width: 1500px;
+    .n-2 {
       display: flex;
+      max-width: 1500px;
       justify-content: space-between;
       flex-wrap: wrap;
+      align-items: center;
       img {
-        max-width: 600px;
+        max-width: 700px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1499px) {
+  .page-pp {
+    section {
+      .n-2 {
+        justify-content: center;
       }
     }
   }
