@@ -26,7 +26,7 @@ li {
 }
 
 header {
-  background: #96c6d9;
+  background: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,8 +45,10 @@ header {
   top: 0px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 10px 10px 20px #9b9b9b;
+          box-shadow: 10px 10px 20px #9b9b9b;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 header #titre {
@@ -76,19 +78,28 @@ header #titre #typo {
   height: 35px;
 }
 
-header nav {
+header .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+header .openMenu i {
+  color: #023859;
+}
+
+header .mainMenu {
   width: 600px;
 }
 
-header nav label {
+header .mainMenu .closeMenu {
+  font-size: 2rem;
   display: none;
+  cursor: pointer;
 }
 
-header nav input {
-  display: none;
-}
-
-header nav ul {
+header .mainMenu ul {
   padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,14 +110,14 @@ header nav ul {
           justify-content: space-between;
 }
 
-header nav ul li {
+header .mainMenu ul li {
   list-style-type: none;
   font-size: 1rem;
   font-weight: bolder;
   text-transform: uppercase;
 }
 
-header nav ul li .list::after {
+header .mainMenu ul li .list::after {
   content: "";
   position: absolute;
   background-color: #025373;
@@ -118,19 +129,37 @@ header nav ul li .list::after {
   transition: 0.5s;
 }
 
-header nav ul li .list:hover::after {
+header .mainMenu ul li .list:hover::after {
   right: 0;
 }
 
-header nav ul li a {
+header .mainMenu ul li a {
   position: relative;
   color: #023859;
-  text-shadow: 1px 1px #558abb;
 }
 
-header nav ul li a i {
+header .mainMenu ul li a i {
   margin-left: 10px;
   font-size: 1.5rem;
+}
+
+header .mainMenu ul li a .fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+header .mainMenu ul li a .fa-linkedin:hover {
+  color: #0e76a8;
+}
+
+header .mainMenu ul li a .fa-instagram:hover {
+  background: linear-gradient(0.48turn, #833ab4, #fcaf45);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header .mainMenu ul li a .fa-envelope:hover {
+  color: black;
 }
 
 section {
@@ -224,15 +253,17 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 40px;
-  background: #96c6d9;
+  background: #f5f5f5;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  -webkit-box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
+          box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
 }
 
 footer #copyright {
@@ -277,6 +308,8 @@ footer h6 a {
 
 @media screen and (max-width: 655px) {
   header {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -288,51 +321,68 @@ footer h6 a {
     width: 300px;
     height: 30px;
   }
-  header nav {
-    width: 25px;
+  header .openMenu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 20px;
   }
-  header nav input[type="checkbox"]:checked + ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  header .mainMenu {
+    position: relative;
+    height: 50vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #f5f5f5;
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
+    display: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    -webkit-box-shadow: 10px 10px 20px #d0d0d0;
+            box-shadow: 10px 10px 20px #d0d0d0;
+  }
+  header .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+  }
+  header .mainMenu ul {
+    margin-top: 80px;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    margin-bottom: 20px;
-    z-index: 2;
-    width: 200px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  header nav input[type="checkbox"] {
+  header .mainMenu ul li {
+    margin-bottom: 20px;
+  }
+  header .mainMenu ul li .list::after {
     display: none;
   }
-  header nav ul {
-    position: absolute;
-    display: none;
-    background-color: #96c6d9;
-    right: 0px;
-    bottom: -148px;
-    font-size: 1.9em;
-    -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-  }
-  header nav ul li .list::after {
-    display: none;
-  }
-  header nav label {
+  header .mainMenu label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  header nav label i {
+  header .mainMenu label i {
     font-size: 1.5em;
+  }
+  header input[type="checkbox"]:checked nav {
+    width: 205px;
   }
   section {
     margin-top: 100px;
@@ -355,6 +405,8 @@ footer h6 a {
             justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
+    -webkit-box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
+            box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
   }
   footer #copyright {
     margin-bottom: 40px;
@@ -366,6 +418,9 @@ footer h6 a {
     padding-left: 70px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+  header .mainMenu .closeMenu {
+    top: 38px;
   }
   header #titre {
     -webkit-box-pack: center;

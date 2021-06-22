@@ -25,34 +25,18 @@ li {
   margin: auto;
 }
 
-header {
-  z-index: 1000;
-  position: fixed;
-}
-
-header a {
-  color: #023859;
-  font-size: 2.5em;
-}
-
-#return {
-  z-index: 1000;
-  position: fixed;
-  top: 191px;
-  left: 50px;
-}
-
-#return a {
-  color: #023859;
-  font-size: 2.5em;
-}
-
 .page-pp {
   padding: 50px;
 }
 
-.page-pp section {
-  margin-top: 100px;
+.page-pp header {
+  z-index: 1000;
+  position: fixed;
+}
+
+.page-pp header a {
+  color: #023859;
+  font-size: 2.5em;
 }
 
 .page-pp section h2 {
@@ -67,7 +51,7 @@ header a {
   margin-bottom: 5px;
   color: #023859;
   font-family: "Poppins", sans-serif;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .page-pp section h2:after {
@@ -111,38 +95,15 @@ header a {
   color: #025373;
 }
 
-.page-pp section #n1 {
+.page-pp section .img-style {
   margin: auto;
   margin-bottom: 50px;
   margin-top: 50px;
   max-width: 790px;
 }
 
-.page-pp section #n1 img {
+.page-pp section .img-style img {
   width: 100%;
-}
-
-.page-pp section #n2-3 {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.page-pp section #n2-3 #n2 {
-  max-width: 790px;
-}
-
-.page-pp section #n2-3 img {
-  margin-bottom: 50px;
-  max-width: 100%;
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .page-pp section .delay1 {
@@ -195,73 +156,7 @@ header a {
   }
 }
 
-@media screen and (max-width: 1049px) {
-  header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 @media screen and (max-width: 655px) {
-  header {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  header #titre {
-    width: 365px;
-  }
-  header #titre #typo {
-    width: 300px;
-    height: 30px;
-  }
-  header nav {
-    width: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 20px;
-  }
-  header nav input[type="checkbox"]:checked + ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    margin-bottom: 20px;
-    z-index: 2;
-    width: 200px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header nav input[type="checkbox"] {
-    display: none;
-  }
-  header nav ul {
-    position: absolute;
-    display: none;
-    background-color: #96c6d9;
-    right: 0px;
-    bottom: -148px;
-    font-size: 1.9em;
-    -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-  }
-  header nav ul li .list::after {
-    display: none;
-  }
-  header nav label {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  header nav label i {
-    font-size: 1.5em;
-  }
   .page-pp {
     padding: 20px;
   }
@@ -279,23 +174,29 @@ header a {
   }
 }
 
-@media screen and (max-width: 480px) {
-  header {
-    padding-left: 70px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  header #titre {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
-  header #titre #typo {
-    display: none;
-  }
-  header #titre #AD-logo {
-    width: 80px;
-  }
+.page-pp section .principal {
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 100px;
 }
-/*# sourceMappingURL=h&p-1.css.map */
+
+.page-pp section .principal img {
+  width: 100%;
+}
+
+.page-pp section #n1 {
+  max-width: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page-pp section #n1 img {
+  max-width: 600px;
+}
+/*# sourceMappingURL=l-4.css.map */

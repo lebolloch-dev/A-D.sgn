@@ -2,17 +2,29 @@
 
 @import "../../../scss/pages/body";
 
+header {
+  z-index: 1000;
+  position: fixed;
+
+  a {
+    color: $color-primary;
+    font-size: 2.5em;
+  }
+}
+
 .page-pp {
   padding: 50px;
-  header {
-    z-index: 1000;
-    position: fixed;
-    a {
-      color: $color-primary;
-      font-size: 2.5em;
-    }
-  }
+  // header {
+  //   z-index: 1000;
+  //   position: fixed;
+  //   a {
+  //     color: $color-primary;
+  //     font-size: 2.5em;
+  //   }
+  // }
+
   section {
+    margin-top: 100px;
     h2 {
       margin: auto;
       position: relative;
@@ -121,7 +133,67 @@
   }
 }
 
+@media screen and (max-width: 1049px) {
+  header {
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 655px) {
+  header {
+    justify-content: space-between;
+    #titre {
+      width: 365px;
+      #typo {
+        width: 300px;
+        height: 30px;
+      }
+    }
+    nav {
+      width: 25px;
+      display: flex;
+      margin-right: 20px;
+
+      input[type="checkbox"]:checked + ul {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 20px;
+        z-index: 2;
+        width: 200px;
+        align-items: center;
+      }
+
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      ul {
+        position: absolute;
+        display: none;
+        background-color: $background-color;
+        right: 0px;
+        bottom: -148px;
+        font-size: 1.9em;
+        box-shadow: 0px 5px 5px rgba($color: #000000, $alpha: 0.3);
+
+        li {
+          .list {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+
+      label {
+        display: flex;
+
+        i {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
   .page-pp {
     padding: 20px;
 
@@ -139,6 +211,24 @@
 
       p {
         font-size: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding-left: 70px;
+
+    flex-wrap: nowrap;
+    #titre {
+      justify-content: center;
+      width: 100%;
+      #typo {
+        display: none;
+      }
+      #AD-logo {
+        width: 80px;
       }
     }
   }
