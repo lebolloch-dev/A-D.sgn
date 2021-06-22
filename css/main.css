@@ -99,6 +99,10 @@ header .mainMenu .closeMenu {
   cursor: pointer;
 }
 
+header .mainMenu .closeMenu i {
+  color: #023859;
+}
+
 header .mainMenu ul {
   padding: 0px;
   display: -webkit-box;

@@ -55,6 +55,9 @@ header {
       font-size: 2rem;
       display: none;
       cursor: pointer;
+      i {
+        color: $color-primary;
+      }
     }
 
     ul {

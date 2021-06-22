@@ -25,30 +25,18 @@ li {
   margin: auto;
 }
 
-header {
-  z-index: 1000;
-  position: fixed;
-}
-
-header a {
-  color: #023859;
-  font-size: 2.5em;
-}
-
-#return {
-  z-index: 1000;
-  position: fixed;
-  top: 191px;
-  left: 50px;
-}
-
-#return a {
-  color: #023859;
-  font-size: 2.5em;
-}
-
 .page-pp {
   padding: 50px;
+}
+
+.page-pp header {
+  z-index: 1000;
+  position: fixed;
+}
+
+.page-pp header a {
+  color: #023859;
+  font-size: 2.5em;
 }
 
 .page-pp section {
@@ -204,64 +192,6 @@ header a {
 }
 
 @media screen and (max-width: 655px) {
-  header {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  header #titre {
-    width: 365px;
-  }
-  header #titre #typo {
-    width: 300px;
-    height: 30px;
-  }
-  header nav {
-    width: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 20px;
-  }
-  header nav input[type="checkbox"]:checked + ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    margin-bottom: 20px;
-    z-index: 2;
-    width: 200px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header nav input[type="checkbox"] {
-    display: none;
-  }
-  header nav ul {
-    position: absolute;
-    display: none;
-    background-color: #96c6d9;
-    right: 0px;
-    bottom: -148px;
-    font-size: 1.9em;
-    -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-  }
-  header nav ul li .list::after {
-    display: none;
-  }
-  header nav label {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  header nav label i {
-    font-size: 1.5em;
-  }
   .page-pp {
     padding: 20px;
   }
@@ -276,26 +206,6 @@ header a {
   }
   .page-pp section p {
     font-size: 1em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  header {
-    padding-left: 70px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  header #titre {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
-  header #titre #typo {
-    display: none;
-  }
-  header #titre #AD-logo {
-    width: 80px;
   }
 }
 /*# sourceMappingURL=h&p-1.css.map */
