@@ -237,12 +237,11 @@ section {
     width: 100%;
   }
   .style-pp {
-    margin: auto;
+    // margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: space-around;
-    max-width: 1150px;
   }
 
   a {
