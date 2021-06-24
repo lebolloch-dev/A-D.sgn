@@ -44,7 +44,6 @@
 
       h3 {
         color: $color-primary;
-
         text-align: center;
         font-size: 1.5em;
         font-weight: bold;
@@ -54,17 +53,16 @@
 
     .groupe-p {
       margin: auto;
-      width: 1300px;
+      max-width: 1300px;
     }
     p {
       margin: auto;
       font-family: $general-font;
       text-align: justify;
       color: $color-primary;
-      font-size: 1.5em;
+      font-size: 1.2em;
       margin: 0px;
       margin-bottom: 15px;
-      width: 1300px;
 
       a {
         color: $color-primary;

@@ -46,7 +46,7 @@ li {
 .page-pp section h2 {
   margin: auto;
   position: relative;
-  font-size: 2em;
+  font-size: 2.2em;
   font-weight: 500;
   text-transform: uppercase;
   padding-top: 2%;
@@ -83,7 +83,7 @@ li {
 
 .page-pp section .groupe-p {
   margin: auto;
-  width: 1300px;
+  max-width: 1300px;
 }
 
 .page-pp section p {
@@ -91,10 +91,9 @@ li {
   font-family: "Mukta", sans-serif;
   text-align: justify;
   color: #023859;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0px;
   margin-bottom: 15px;
-  width: 1300px;
 }
 
 .page-pp section p a {
