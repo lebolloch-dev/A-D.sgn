@@ -46,7 +46,7 @@ li {
 .page-pp section h2 {
   margin: auto;
   position: relative;
-  font-size: 2.8em;
+  font-size: 2em;
   font-weight: 500;
   text-transform: uppercase;
   padding-top: 2%;
@@ -63,29 +63,38 @@ li {
   content: "";
   left: 30px;
   right: 30px;
-  height: 5px;
+  height: 2px;
   bottom: -5px;
   background: #96c6d9;
 }
 
-.page-pp section #info {
+.page-pp section .info {
   padding: 20px;
   margin-top: 50px;
 }
 
-.page-pp section #info h3 {
+.page-pp section .info h3 {
   color: #023859;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   font-family: "Mukta", sans-serif;
 }
 
+.page-pp section .groupe-p {
+  margin: auto;
+  width: 1300px;
+}
+
 .page-pp section p {
+  margin: auto;
   font-family: "Mukta", sans-serif;
-  text-align: center;
+  text-align: justify;
   color: #023859;
   font-size: 1.5em;
+  margin: 0px;
+  margin-bottom: 15px;
+  width: 1300px;
 }
 
 .page-pp section p a {
@@ -103,34 +112,32 @@ li {
   margin: auto;
   margin-bottom: 50px;
   margin-top: 50px;
-  max-width: 790px;
+  max-width: 1300px;
 }
 
 .page-pp section #n1 img {
   width: 100%;
 }
 
-.page-pp section #n2-3 {
-  width: 100%;
+.page-pp section #n2 {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  max-width: 1300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px;
 }
 
-.page-pp section #n2-3 #n2 {
-  max-width: 790px;
-}
-
-.page-pp section #n2-3 img {
-  margin-bottom: 50px;
-  max-width: 100%;
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+.page-pp section #n2 img {
+  max-width: 800px;
 }
 
 .page-pp section .delay1 {

@@ -45,10 +45,10 @@ header {
   top: 0px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-shadow: 10px 10px 20px #9b9b9b;
-          box-shadow: 10px 10px 20px #9b9b9b;
-  border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 50px;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 header #titre {
@@ -57,8 +57,6 @@ header #titre {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 20px;
-  padding-bottom: 20px;
   width: 410px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -90,7 +88,7 @@ header .openMenu i {
 }
 
 header .mainMenu {
-  width: 600px;
+  width: 611px;
 }
 
 header .mainMenu .closeMenu {
@@ -109,9 +107,6 @@ header .mainMenu ul {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 header .mainMenu ul li {
@@ -119,6 +114,10 @@ header .mainMenu ul li {
   font-size: 1rem;
   font-weight: bolder;
   text-transform: uppercase;
+}
+
+header .mainMenu ul li .list {
+  margin-right: 30px;
 }
 
 header .mainMenu ul li .list::after {
@@ -143,7 +142,7 @@ header .mainMenu ul li a {
 }
 
 header .mainMenu ul li a i {
-  margin-left: 10px;
+  margin-right: 8px;
   font-size: 1.5rem;
 }
 
@@ -168,20 +167,20 @@ header .mainMenu ul li a .fa-envelope:hover {
 
 section {
   margin-top: 100px;
-  padding-top: 60px;
+  padding: 40px;
   background: #f5f5f5;
 }
 
 section h2 {
   margin: auto;
   position: relative;
-  font-size: 2.8em;
+  font-size: 2em;
   font-weight: 500;
   text-transform: uppercase;
   padding-top: 2%;
   text-align: center;
   margin-top: 0%;
-  margin-bottom: 5px;
+  margin-bottom: 40px;
   color: #023859;
   font-family: "Poppins", sans-serif;
   max-width: 380px;
@@ -192,18 +191,19 @@ section h2:after {
   content: "";
   left: 30px;
   right: 30px;
-  height: 5px;
+  height: 2px;
   bottom: -5px;
   background: #96c6d9;
 }
 
 section h3 {
+  margin: 40px 0;
   color: #023859;
   font-weight: 500;
-  text-align: center;
-  font-size: 2.2em;
-  padding-top: 100px;
+  font-size: 1.8em;
+  padding-top: 40px;
   font-family: "Poppins", sans-serif;
+  width: 100%;
 }
 
 section .style-pp {
@@ -213,41 +213,97 @@ section .style-pp {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
   max-width: 1150px;
 }
 
 section a {
-  max-width: 330px;
-  margin-bottom: 60px;
+  max-width: 300px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  border-radius: 20px;
+  background: #f5f5f5;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15), -10px -10px 10px #ffffff;
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15), -10px -10px 10px #ffffff;
+  cursor: pointer;
+}
+
+section a:hover {
+  border-radius: 20px;
+  background: #f5f5f5;
+  -webkit-box-shadow: inset 15px 15px 59px #f0f0f0, inset -15px -15px 59px #fafafa;
+          box-shadow: inset 15px 15px 59px #f0f0f0, inset -15px -15px 59px #fafafa;
+}
+
+section a:active {
+  border-radius: 20px;
+  background: #f5f5f5;
+  -webkit-box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.15), inset -10px -10px 10px #ffffff;
+          box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.15), inset -10px -10px 10px #ffffff;
 }
 
 section a img {
   width: 100%;
-  -webkit-transition: 0.4s all;
-  transition: 0.4s all;
-  border-radius: 50px;
-  background: #f5f5f5;
-  -webkit-box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
-          box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
-  cursor: pointer;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-section a img:hover {
-  border-radius: 50px;
-  background: #f5f5f5;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+section a .info-vignettes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
 }
 
-section a img:active {
-  border-radius: 50px;
-  background: #f5f5f5;
-  -webkit-box-shadow: inset 10px 10px 20px #d0d0d0, inset -10px -10px 20px #ffffff;
-          box-shadow: inset 10px 10px 20px #d0d0d0, inset -10px -10px 20px #ffffff;
+section a .info-vignettes p {
+  font-family: "Mukta", sans-serif;
+  line-height: 1.1;
+  font-size: 0.9em;
+  color: #023859;
+  padding: 0px;
+  margin: 0px;
+  font-style: italic;
+  margin: 0px;
+}
+
+section a .info-vignettes .tag-vignettes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50px;
+}
+
+section a .info-vignettes .tag-vignettes span {
+  margin: 3px 10px;
+  border-radius: 20px;
+  width: 10px;
+  height: 10px;
+}
+
+section a .info-vignettes .tag-vignettes .color1 {
+  background: #b0f2b6;
+  border: 1px solid rgba(0, 128, 0, 0.5);
+}
+
+section a .info-vignettes .tag-vignettes .color2 {
+  background: #77b5fe;
+  border: 1px solid rgba(0, 0, 255, 0.5);
+}
+
+section a .info-vignettes .tag-vignettes .color3 {
+  background: #ff6961;
+  border: 1px solid rgba(255, 0, 0, 0.5);
 }
 
 footer {
@@ -260,14 +316,14 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px;
+  padding: 20px;
   background: #f5f5f5;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  -webkit-box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
-          box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15), -10px -10px 20px #ffffff;
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15), -10px -10px 20px #ffffff;
 }
 
 footer #copyright {
@@ -299,7 +355,7 @@ footer h6 a {
   font-family: "Poppins", sans-serif;
 }
 
-@media screen and (max-width: 1049px) {
+@media screen and (max-width: 1060px) {
   header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -307,6 +363,18 @@ footer h6 a {
   }
   section {
     margin-top: 170px;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  section .style-pp {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section a {
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -332,7 +400,6 @@ footer h6 a {
   }
   header .mainMenu {
     position: relative;
-    height: 50vh;
     position: fixed;
     top: 0;
     right: 0;
@@ -361,7 +428,7 @@ footer h6 a {
     right: 45px;
   }
   header .mainMenu ul {
-    margin-top: 80px;
+    margin-top: 30px;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -370,9 +437,13 @@ footer h6 a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 0px;
   }
   header .mainMenu ul li {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  header .mainMenu ul li .list {
+    margin-right: 0px;
   }
   header .mainMenu ul li .list::after {
     display: none;
@@ -389,15 +460,10 @@ footer h6 a {
     width: 205px;
   }
   section {
-    margin-top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  section h2 {
-    font-size: 2.5em;
+    margin-top: 80px;
   }
   section h3 {
-    font-size: 2em;
+    margin-top: 0px;
   }
   footer {
     -webkit-box-orient: vertical;
@@ -409,22 +475,24 @@ footer h6 a {
             justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-    -webkit-box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
-            box-shadow: 10px 10px 20px #d0d0d0, -10px -10px 20px #ffffff;
   }
   footer #copyright {
     margin-bottom: 40px;
   }
 }
 
+@media screen and (max-width: 550px) {
+  section a {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   header {
-    padding-left: 70px;
+    padding-left: 88px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-  }
-  header .mainMenu .closeMenu {
-    top: 38px;
   }
   header #titre {
     -webkit-box-pack: center;
@@ -436,7 +504,10 @@ footer h6 a {
     display: none;
   }
   header #titre #AD-logo {
-    width: 80px;
+    width: 50px;
+  }
+  section h3 {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
