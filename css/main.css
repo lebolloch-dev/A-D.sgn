@@ -223,31 +223,31 @@ section a {
   max-width: 330px;
   margin-bottom: 40px;
   margin-right: 40px;
-  -webkit-transition: 0.4s all;
-  transition: 0.4s all;
   border-radius: 20px;
   background: #f5f5f5;
   -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15), -10px -10px 10px #ffffff;
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15), -10px -10px 10px #ffffff;
   cursor: pointer;
+  -webkit-transition: all 5s;
+  transition: all 5s;
 }
 
 section a:hover {
   border-radius: 20px;
-  -webkit-transition: 0.4s all;
-  transition: 0.4s all;
   background: #f5f5f5;
   -webkit-box-shadow: inset 15px 15px 59px #f0f0f0, inset -15px -15px 59px #fafafa;
           box-shadow: inset 15px 15px 59px #f0f0f0, inset -15px -15px 59px #fafafa;
+  -webkit-transition: all 5s;
+  transition: all 5s;
 }
 
 section a:active {
   border-radius: 20px;
-  -webkit-transition: 0.4s all;
-  transition: 0.4s all;
   background: #f5f5f5;
   -webkit-box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.15), inset -10px -10px 10px #ffffff;
           box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.15), inset -10px -10px 10px #ffffff;
+  -webkit-transition: 5s all;
+  transition: 5s all;
 }
 
 section a img {
