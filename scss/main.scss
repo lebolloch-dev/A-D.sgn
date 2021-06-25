@@ -362,17 +362,17 @@ footer {
     width: 120px;
     justify-content: space-between;
     color: $color-primary;
-    h6 {
+    p {
+      font-family: $title-font;
       font-size: 1em;
     }
   }
-  h6 {
+
+  a {
     margin: 0px;
-    a {
-      color: $color-primary;
-      font-size: 1.2em;
-      font-family: $title-font;
-    }
+    color: $color-primary;
+    font-size: 1.2em;
+    font-family: $title-font;
   }
 }
 
