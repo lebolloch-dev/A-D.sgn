@@ -32,6 +32,7 @@ li {
 .page-pp header {
   z-index: 1000;
   position: fixed;
+  margin-top: 31px;
 }
 
 .page-pp header a {
@@ -40,7 +41,8 @@ li {
 }
 
 .page-pp section {
-  margin-top: 100px;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .page-pp section h2 {
@@ -52,7 +54,7 @@ li {
   padding-top: 2%;
   text-align: center;
   margin-top: 0%;
-  margin-bottom: 5px;
+  margin-bottom: 80px;
   color: #023859;
   font-family: "Poppins", sans-serif;
   max-width: 300px;
@@ -68,32 +70,12 @@ li {
   background: #96c6d9;
 }
 
-.page-pp section .info {
-  padding: 20px;
-  margin-top: 50px;
-}
-
-.page-pp section .info h3 {
-  color: #023859;
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  font-family: "Mukta", sans-serif;
-}
-
-.page-pp section .groupe-p {
-  margin: auto;
-  max-width: 1300px;
-}
-
 .page-pp section p {
-  margin: auto;
   font-family: "Mukta", sans-serif;
-  text-align: justify;
   color: #023859;
   font-size: 1.2em;
   margin: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .page-pp section p a {
@@ -107,36 +89,47 @@ li {
   color: #025373;
 }
 
-.page-pp section #n1 {
-  margin: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  max-width: 1300px;
-}
-
-.page-pp section #n1 img {
-  width: 100%;
-}
-
-.page-pp section #n2 {
-  margin: auto;
+.page-pp section .groupe-img-style {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 1300px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.page-pp section .groupe-img-style img {
+  max-width: 100%;
   margin-bottom: 40px;
 }
 
-.page-pp section #n2 img {
-  max-width: 800px;
+.page-pp section .img-style {
+  margin-bottom: 40px;
+  max-width: 1300px;
+}
+
+.page-pp section .img-style img {
+  width: 100%;
+}
+
+.page-pp section .img-style p {
+  margin: auto;
+  font-family: "Mukta", sans-serif;
+  color: #023859;
+  font-size: 1em;
+  margin: 0px;
+  font-style: italic;
+}
+
+.page-pp section .m-top {
+  margin-top: 40px;
+}
+
+.page-pp section .m-right {
+  margin-right: 40px;
 }
 
 .page-pp section .delay1 {
@@ -189,26 +182,15 @@ li {
   }
 }
 
-@media screen and (max-width: 1049px) {
-  header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 @media screen and (max-width: 655px) {
   .page-pp {
     padding: 20px;
   }
   .page-pp section {
-    margin-top: 50px;
+    margin-top: 22px;
   }
   .page-pp section h2 {
     font-size: 2em;
-  }
-  .page-pp section #info h3 {
-    font-size: 1.4em;
   }
   .page-pp section p {
     font-size: 1em;

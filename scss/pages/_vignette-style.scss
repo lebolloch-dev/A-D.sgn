@@ -6,6 +6,7 @@
   header {
     z-index: 1000;
     position: fixed;
+    margin-top: 31px;
     a {
       color: $color-primary;
       font-size: 2.5em;
@@ -13,48 +14,39 @@
   }
 
   section {
+    max-width: 1300px;
+    margin: auto;
+
     h2 {
       margin: auto;
       position: relative;
-      font-size: 2.8em;
+      font-size: 2.2em;
       font-weight: 500;
       text-transform: uppercase;
       padding-top: 2%;
       text-align: center;
       margin-top: 0%;
-      margin-bottom: 5px;
+      margin-bottom: 80px;
       color: $color-primary;
       font-family: $title-font;
-      max-width: 350px;
+      max-width: 300px;
       &:after {
         position: absolute;
         content: "";
         left: 30px;
         right: 30px;
-        height: 5px;
+        height: 2px;
         bottom: -5px;
         background: $background-color;
       }
     }
 
-    #info {
-      padding: 20px;
-      margin-top: 50px;
-
-      h3 {
-        color: $color-primary;
-
-        text-align: center;
-        font-size: 2em;
-        font-weight: bold;
-        font-family: $general-font;
-      }
-    }
     p {
       font-family: $general-font;
-      text-align: center;
       color: $color-primary;
-      font-size: 1.5em;
+      font-size: 1.2em;
+      margin: 0px;
+      margin-bottom: 8px;
 
       a {
         color: $color-primary;
@@ -66,14 +58,41 @@
       }
     }
 
+    .groupe-img-style {
+      display: flex;
+      max-width: 1300px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      img {
+        max-width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+
     .img-style {
-      margin: auto;
-      margin-bottom: 50px;
-      margin-top: 50px;
-      max-width: 790px;
+      margin-bottom: 40px;
+      max-width: 1300px;
       img {
         width: 100%;
       }
+      p {
+        margin: auto;
+        font-family: $general-font;
+
+        color: $color-primary;
+        font-size: 1em;
+        margin: 0px;
+        font-style: italic;
+      }
+    }
+
+    .m-top {
+      margin-top: 40px;
+    }
+
+    .m-right {
+      margin-right: 40px;
     }
 
     .delay1 {
@@ -109,15 +128,9 @@
     padding: 20px;
 
     section {
-      margin-top: 50px;
+      margin-top: 22px;
       h2 {
         font-size: 2em;
-      }
-
-      #info {
-        h3 {
-          font-size: 1.4em;
-        }
       }
 
       p {

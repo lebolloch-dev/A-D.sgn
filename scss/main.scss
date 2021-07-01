@@ -227,6 +227,63 @@ section {
       background: $background-color;
     }
   }
+
+  #tags {
+    font-family: $general-font;
+    display: flex;
+    max-width: 550px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .color-1 {
+      background-color: #d1b3f4;
+      // border: 1px solid darken($color: #d1b3f4, $amount: 20);
+      color: darken($color: #d1b3f4, $amount: 20);
+    }
+    .color-2 {
+      background-color: #95efd1;
+      color: darken($color: #95efd1, $amount: 40);
+    }
+    .color-3 {
+      background-color: #efde97;
+      color: darken($color: #efde97, $amount: 30);
+    }
+    .color-4 {
+      background-color: #8cd39e;
+      // border: 1px solid darken($color: #8cd39e, $amount: 20);
+      color: darken($color: #8cd39e, $amount: 30);
+    }
+    .color-5 {
+      background-color: #9ea7dd;
+      color: darken($color: #9ea7dd, $amount: 30);
+    }
+    .color-6 {
+      background-color: #ffff66;
+      color: darken($color: #ffff66, $amount: 30);
+    }
+    .color-7 {
+      background-color: #efb9bc;
+      color: darken($color: #efb9bc, $amount: 20);
+    }
+    .color-8 {
+      background-color: #eaace3;
+      color: darken($color: #eaace3, $amount: 20);
+    }
+
+    .tag {
+      // width: 140px;
+      // border: 1px solid black;
+      border-radius: 50px;
+      text-align: center;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      p {
+        margin: 0px;
+        padding: 4px 8px;
+      }
+    }
+  }
   h3 {
     margin: 40px 0;
     color: $color-primary;
@@ -326,6 +383,41 @@ section {
           .color3 {
             background: #ff6961;
             // border: 1px solid rgba($color: red, $alpha: 0.5);
+          }
+
+          .color-1 {
+            background-color: #d1b3f4;
+            // border: 1px solid darken($color: #d1b3f4, $amount: 20);
+            color: darken($color: #d1b3f4, $amount: 20);
+          }
+          .color-2 {
+            background-color: #95efd1;
+            color: darken($color: #95efd1, $amount: 40);
+          }
+          .color-3 {
+            background-color: #efde97;
+            color: darken($color: #efde97, $amount: 30);
+          }
+          .color-4 {
+            background-color: #8cd39e;
+
+            color: darken($color: #8cd39e, $amount: 30);
+          }
+          .color-5 {
+            background-color: #9ea7dd;
+            color: darken($color: #9ea7dd, $amount: 30);
+          }
+          .color-6 {
+            background-color: #ffff66;
+            color: darken($color: #ffff66, $amount: 30);
+          }
+          .color-7 {
+            background-color: #efb9bc;
+            color: darken($color: #efb9bc, $amount: 20);
+          }
+          .color-8 {
+            background-color: #eaace3;
+            color: darken($color: #eaace3, $amount: 20);
           }
         }
       }

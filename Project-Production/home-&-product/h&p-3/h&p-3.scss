@@ -5,10 +5,19 @@
 
 .page-pp {
   section {
-    #vision {
-      max-width: 790px;
+    .img-style {
       margin: auto;
-      height: 500px;
+      max-width: 900px;
+      margin-bottom: 40px;
+    }
+
+    .m-top {
+      margin-top: 40px;
+    }
+    #vision {
+      max-width: 900px;
+      margin: auto;
+      height: 600px;
       margin-bottom: 50px;
 
       .sketchfab-embed-wrapper {

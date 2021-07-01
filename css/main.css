@@ -196,6 +196,72 @@ section h2:after {
   background: #96c6d9;
 }
 
+section #tags {
+  font-family: "Mukta", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 550px;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section #tags .color-1 {
+  background-color: #d1b3f4;
+  color: #9b5ae7;
+}
+
+section #tags .color-2 {
+  background-color: #95efd1;
+  color: #18a073;
+}
+
+section #tags .color-3 {
+  background-color: #efde97;
+  color: #cdac20;
+}
+
+section #tags .color-4 {
+  background-color: #8cd39e;
+  color: #378f4d;
+}
+
+section #tags .color-5 {
+  background-color: #9ea7dd;
+  color: #3b4aa7;
+}
+
+section #tags .color-6 {
+  background-color: #ffff66;
+  color: #cccc00;
+}
+
+section #tags .color-7 {
+  background-color: #efb9bc;
+  color: #dc666d;
+}
+
+section #tags .color-8 {
+  background-color: #eaace3;
+  color: #d55bc8;
+}
+
+section #tags .tag {
+  border-radius: 50px;
+  text-align: center;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+section #tags .tag p {
+  margin: 0px;
+  padding: 4px 8px;
+}
+
 section h3 {
   margin: 40px 0;
   color: #023859;
@@ -326,6 +392,46 @@ section a .info-vignettes .info-vignettes-details .tag-vignettes .color2 {
 
 section a .info-vignettes .info-vignettes-details .tag-vignettes .color3 {
   background: #ff6961;
+}
+
+section a .info-vignettes .info-vignettes-details .tag-vignettes .color-1 {
+  background-color: #d1b3f4;
+  color: #9b5ae7;
+}
+
+section a .info-vignettes .info-vignettes-details .tag-vignettes .color-2 {
+  background-color: #95efd1;
+  color: #18a073;
+}
+
+section a .info-vignettes .info-vignettes-details .tag-vignettes .color-3 {
+  background-color: #efde97;
+  color: #cdac20;
+}
+
+section a .info-vignettes .info-vignettes-details .tag-vignettes .color-4 {
+  background-color: #8cd39e;
+  color: #378f4d;
+}
+
+section a .info-vignettes .info-vignettes-details .tag-vignettes .color-5 {
+  background-color: #9ea7dd;
+  color: #3b4aa7;
+}
+
+section a .info-vignettes .info-vignettes-details .tag-vignettes .color-6 {
+  background-color: #ffff66;
+  color: #cccc00;
+}
+
+section a .info-vignettes .info-vignettes-details .tag-vignettes .color-7 {
+  background-color: #efb9bc;
+  color: #dc666d;
+}
+
+section a .info-vignettes .info-vignettes-details .tag-vignettes .color-8 {
+  background-color: #eaace3;
+  color: #d55bc8;
 }
 
 section a .info-vignettes p {
