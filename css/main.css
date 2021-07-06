@@ -88,7 +88,7 @@ header .openMenu i {
 }
 
 header .mainMenu {
-  width: 653px;
+  width: 655px;
 }
 
 header .mainMenu .closeMenu {
@@ -180,7 +180,7 @@ section h2 {
   padding-top: 2%;
   text-align: center;
   margin-top: 0%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #023859;
   font-family: "Poppins", sans-serif;
   max-width: 380px;
@@ -491,30 +491,7 @@ footer a {
   font-family: "Poppins", sans-serif;
 }
 
-@media screen and (max-width: 1060px) {
-  header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  section {
-    margin-top: 170px;
-  }
-}
-
-@media screen and (max-width: 819px) {
-  section .style-pp {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  section a {
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-}
-
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 1102px) {
   header {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -534,7 +511,10 @@ footer a {
     display: -ms-flexbox;
     display: flex;
   }
-  header .mainMenu {
+  header input[type="checkbox"]:checked nav {
+    width: 205px;
+  }
+  .mainMenu {
     position: relative;
     position: fixed;
     top: 0;
@@ -557,13 +537,13 @@ footer a {
     -webkit-box-shadow: 10px 10px 20px #d0d0d0;
             box-shadow: 10px 10px 20px #d0d0d0;
   }
-  header .mainMenu .closeMenu {
+  .mainMenu .closeMenu {
     display: block;
     position: absolute;
     top: 20px;
     right: 45px;
   }
-  header .mainMenu ul {
+  .mainMenu ul {
     margin-top: 30px;
     width: 100%;
     -webkit-box-orient: vertical;
@@ -575,26 +555,38 @@ footer a {
             align-items: center;
     margin-bottom: 0px;
   }
-  header .mainMenu ul li {
+  .mainMenu ul li {
     margin-bottom: 30px;
   }
-  header .mainMenu ul li .list {
+  .mainMenu ul li .list {
     margin-right: 0px;
   }
-  header .mainMenu ul li .list::after {
+  .mainMenu ul li .list::after {
     display: none;
   }
-  header .mainMenu label {
+  .mainMenu label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  header .mainMenu label i {
+  .mainMenu label i {
     font-size: 1.5em;
   }
-  header input[type="checkbox"]:checked nav {
-    width: 205px;
+}
+
+@media screen and (max-width: 819px) {
+  section .style-pp {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
+  section a {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 655px) {
   section {
     margin-top: 80px;
   }
@@ -630,6 +622,9 @@ footer a {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+  header .mainMenu .closeMenu {
+    top: 38px;
+  }
   header #titre {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -642,7 +637,7 @@ footer a {
   header #titre #AD-logo {
     width: 50px;
   }
-  section h3 {
+  cc section h3 {
     text-align: center;
   }
 }

@@ -45,7 +45,7 @@ li {
   margin: auto;
 }
 
-.page-pp section h2 {
+.page-pp section h1 {
   margin: auto;
   position: relative;
   font-size: 2.2em;
@@ -60,7 +60,7 @@ li {
   max-width: 300px;
 }
 
-.page-pp section h2:after {
+.page-pp section h1:after {
   position: absolute;
   content: "";
   left: 30px;
@@ -68,6 +68,11 @@ li {
   height: 2px;
   bottom: -5px;
   background: #96c6d9;
+}
+
+.page-pp section h2 {
+  color: #023859;
+  font-family: "Poppins", sans-serif;
 }
 
 .page-pp section p {
@@ -104,6 +109,21 @@ li {
 .page-pp section .groupe-img-style img {
   max-width: 100%;
   margin-bottom: 40px;
+}
+
+.page-pp section .groupe-img-style p {
+  margin: auto;
+  font-family: "Mukta", sans-serif;
+  color: #023859;
+  font-size: 1em;
+  margin: 0px;
+  font-style: italic;
+}
+
+.page-pp section .justify-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .page-pp section .img-style {
@@ -212,6 +232,10 @@ li {
 
 .page-pp section .groupe-img-style .m-bottom {
   margin-bottom: 0px;
+}
+
+.page-pp section .m-bottom-40 {
+  margin-bottom: 16px;
 }
 
 @media screen and (max-width: 1399px) {

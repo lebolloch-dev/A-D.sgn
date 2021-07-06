@@ -1,0 +1,79 @@
+@import "../../../scss/outils/variables";
+
+@import "../../../scss/pages/body";
+
+@import "../../../scss/pages/vignette-style";
+
+.page-pp {
+  section {
+    .img-style {
+      margin: auto;
+      max-width: 600px;
+      margin-bottom: 40px;
+    }
+    .groupe-img-style {
+      margin-bottom: 40px;
+
+      .groupe-img-style-binome {
+        max-width: 630px;
+
+        img {
+          max-width: 100%;
+          margin-bottom: 0px;
+        }
+      }
+      .m-bottom {
+        margin-bottom: 0px;
+      }
+      .black {
+        color: black;
+      }
+      .grey {
+        color: #777472;
+      }
+      p {
+        margin: auto;
+        font-family: $general-font;
+
+        color: $color-primary;
+        font-size: 1em;
+        margin: 0px;
+        font-style: italic;
+      }
+    }
+    #video-style {
+      max-width: 630px;
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      video {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .page-pp {
+    section {
+      .groupe-img-style {
+        .m-bottom {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .page-pp {
+    section {
+      .groupe-img-style {
+        .m-right {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}

@@ -49,7 +49,7 @@ header {
   }
 
   .mainMenu {
-    width: 653px;
+    width: 655px;
 
     .closeMenu {
       font-size: 2rem;
@@ -213,7 +213,7 @@ section {
     padding-top: 2%;
     text-align: center;
     margin-top: 0%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: $color-primary;
     font-family: $title-font;
     max-width: 380px;
@@ -470,30 +470,7 @@ footer {
 
 // RESPONSIVE
 
-@media screen and (max-width: 1060px) {
-  header {
-    justify-content: center;
-  }
-
-  section {
-    margin-top: 170px;
-  }
-}
-
-@media screen and (max-width: 819px) {
-  section {
-    .style-pp {
-      justify-content: center;
-    }
-
-    a {
-      margin-right: 20px;
-      margin-left: 20px;
-    }
-  }
-}
-
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 1102px) {
   header {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -510,62 +487,87 @@ footer {
       display: flex;
     }
 
-    .mainMenu {
-      position: relative;
-
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 10;
-      width: 100vw;
-      justify-content: center;
-      align-items: center;
-      background: #f5f5f5;
-      transition: top 1s ease;
-      display: none;
-      border-bottom-left-radius: 50px;
-      border-bottom-right-radius: 50px;
-      box-shadow: 10px 10px 20px #d0d0d0;
-
-      .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 45px;
-      }
-
-      ul {
-        margin-top: 30px;
-        width: 100%;
-        flex-flow: column;
-        align-items: center;
-        margin-bottom: 0px;
-
-        li {
-          margin-bottom: 30px;
-          .list {
-            margin-right: 0px;
-            &::after {
-              display: none;
-            }
-          }
-        }
-      }
-
-      label {
-        display: flex;
-
-        i {
-          font-size: 1.5em;
-        }
-      }
-    }
     input[type="checkbox"]:checked nav {
       width: 205px;
     }
   }
+  .mainMenu {
+    position: relative;
 
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    transition: top 1s ease;
+    display: none;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 10px 10px 20px #d0d0d0;
+
+    .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 45px;
+    }
+
+    ul {
+      margin-top: 30px;
+      width: 100%;
+      flex-flow: column;
+      align-items: center;
+      margin-bottom: 0px;
+
+      li {
+        margin-bottom: 30px;
+        .list {
+          margin-right: 0px;
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    label {
+      display: flex;
+
+      i {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 1060px) {
+//   header {
+//     justify-content: center;
+//   }
+
+//   section {
+//     margin-top: 170px;
+//   }
+// }
+
+@media screen and (max-width: 819px) {
+  section {
+    .style-pp {
+      justify-content: center;
+    }
+
+    a {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 655px) {
   section {
     margin-top: 80px;
 
@@ -601,11 +603,11 @@ footer {
 
     flex-wrap: nowrap;
 
-    // .mainMenu {
-    //   .closeMenu {
-    //     top: 38px;
-    //   }
-    // }
+    .mainMenu {
+      .closeMenu {
+        top: 38px;
+      }
+    }
 
     #titre {
       justify-content: center;
@@ -619,7 +621,7 @@ footer {
     }
   }
 
-  section {
+  cc section {
     h3 {
       text-align: center;
     }

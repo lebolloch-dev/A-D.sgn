@@ -6,8 +6,49 @@
 
 .page-pp {
   section {
-    h2 {
-      max-width: 700px;
+    .img-style {
+      margin: auto;
+      max-width: 900px;
+      margin-bottom: 40px;
+    }
+    .groupe-img-style {
+      margin-bottom: 40px;
+
+      .groupe-img-style-binome {
+        max-width: 630px;
+
+        img {
+          max-width: 100%;
+          margin-bottom: 0px;
+        }
+      }
+      .m-bottom {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .page-pp {
+    section {
+      .groupe-img-style {
+        .m-bottom {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .page-pp {
+    section {
+      .groupe-img-style {
+        .m-right {
+          margin-right: 0px;
+        }
+      }
     }
   }
 }

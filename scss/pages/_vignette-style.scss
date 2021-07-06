@@ -17,7 +17,7 @@
     max-width: 1300px;
     margin: auto;
 
-    h2 {
+    h1 {
       margin: auto;
       position: relative;
       font-size: 2.2em;
@@ -39,6 +39,11 @@
         bottom: -5px;
         background: $background-color;
       }
+    }
+
+    h2 {
+      color: $color-primary;
+      font-family: $title-font;
     }
 
     p {
@@ -68,6 +73,19 @@
         max-width: 100%;
         margin-bottom: 40px;
       }
+      p {
+        margin: auto;
+        font-family: $general-font;
+
+        color: $color-primary;
+        font-size: 1em;
+        margin: 0px;
+        font-style: italic;
+      }
+    }
+
+    .justify-content {
+      justify-content: center;
     }
 
     .img-style {
