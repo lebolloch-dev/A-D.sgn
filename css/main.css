@@ -498,7 +498,7 @@ footer a {
             transition-duration: 0.3s;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-    height: 98vh;
+    height: 100vh;
   }
   header {
     position: static;
