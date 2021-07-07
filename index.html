@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <meta http-equiv="Cache-Control": max-age="31536000">
 
@@ -35,16 +35,24 @@
   </head>
 
   <body>
-    <header>
+   <div class="site-container">
+      <div class="site-pusher">
+      <header>
+     
+      <!-- <div class="closeMenu"><i class="fa fa-times"></i></div> -->
+
       <div id="titre">
         <img id="AD-logo" src="img/logo1.png" alt="logo designer" />
         <img id="typo" src="img/Typologo.png" alt="" />
       </div>
-      <div class="openMenu"><i class="fa fa-bars"></i></div>
+      
+       <div class="icone" id="icone" ><i class="fa fa-bars"></i></div>
+       
       <nav class="mainMenu">
         <ul>
-          <li><a href="#pf" class="list">Projects</a></li>
-          <li><a href="#ancre" class="list">Realisations</a></li>
+          <li></li>
+          <li><a href="#projects" class="list">Projects</a></li>
+          <li><a href="#realisations" class="list">Realisations</a></li>
           <li><a href="#graphism" class="list">Graphism</a></li>
           <li><a href="#about" class="list">About me</a></li>
 
@@ -75,36 +83,37 @@
             ></a>
           </li>
         </ul>
-        <div class="closeMenu"><i class="fa fa-times"></i></div>
+        
       </nav>
     </header>
 
     <div id="page">
-      <!-- <div id="profile">
-        <div id="logo">
-          <img id="AD-logo" src="img/logo1.png" alt="logo designer" />
-          <div id="description">
-            <p>
-              I'm a french product designer, based in Montréal. <br />
-              I have a background in <b> mechanical design</b> and
-              <b>product design</b>.
-            </p>
-            <p>
-              I try, as much as possible, to design my projects with an
-              eco-responsible approach, at all stages of the product life, and
-              combine technology and aesthetics to achieve the best result for
-              my products.
-            </p>
-          </div>
-          <div id="photo-id">
-            <img
-              id="toinou"
-              src="img/essai_profile.png"
-              alt="photo de profile"
-            />
-          </div>
-        </div>
-      </div> -->
+      <main>
+          <!-- <div id="profile">
+                  <div id="logo">
+                    <img id="AD-logo" src="img/logo1.png" alt="logo designer" />
+                    <div id="description">
+                      <p>
+                        I'm a french product designer, based in Montréal. <br />
+                        I have a background in <b> mechanical design</b> and
+                        <b>product design</b>.
+                      </p>
+                      <p>
+                        I try, as much as possible, to design my projects with an
+                        eco-responsible approach, at all stages of the product life, and
+                        combine technology and aesthetics to achieve the best result for
+                        my products.
+                      </p>
+                    </div>
+                    <div id="photo-id">
+                      <img
+                        id="toinou"
+                        src="img/essai_profile.png"
+                        alt="photo de profile"
+                      />
+                    </div>
+                  </div>
+                </div> -->
 
       <section id="pf">
         <h2>Portfolio</h2>
@@ -134,18 +143,13 @@
           <div class="tag color-8">
             <p>Trend analysis</p>
           </div>
-          <!-- <div class="tag">
-            <p></p>
-          </div>
-          <div class="tag">
-            <p></p>
-          </div> -->
-          
+                   
         </div>
 
-        <div id="home-product" class="style-pp">
+        <div id="projects" class="style-pp">
           <h3>Projects</h3>
-          <a href="Project-Production/home-&-product/h&p-1/h&p-1.html">
+          
+          <a href="Project-Production/home-&-product/h&p-1/h&p-1.html" >
             <img src="img/portfolio/ostraa.png" alt="plateau à coquillage et porte bouteille" />
             <div class="info-vignettes">
               <div class="info-vignettes-details">
@@ -163,6 +167,7 @@
               </p>
             </div>
           </a>
+          <span class="ancres" id="modular" ></span>
           <a href="Project-Production/home-&-product/h&p-2/h&p-2.html">
             <img src="img/portfolio/modulara.png" alt="table basse modulable" />
             <div class="info-vignettes">
@@ -181,6 +186,7 @@
               </p>
             </div>
           </a>
+          <span class="ancres" id="detritivore" ></span>
           <a href="Project-Production/home-&-product/h&p-3/h&p-3.html">
             <img src="img/portfolio/detritivora.png" alt="composte d'interieur"/>
            <div class="info-vignettes">
@@ -199,6 +205,7 @@
               </p>
             </div>
           </a>
+           <span class="ancres" id="flipflap" ></span>
           <a href="Project-Production/home-&-product/h&p-4/h&p-4.html">
             <img src="img/portfolio/flipflapa.png" />
             <div class="info-vignettes">
@@ -217,6 +224,7 @@
               </p>
             </div>
           </a>
+          <span class="ancres" id="pixel" ></span>
           <a href="Project-Production/light/l-1/l-1.html">
             <img src="img/portfolio/pixela.png" alt="lampe cubique aimanté" />
             <div class="info-vignettes">
@@ -236,6 +244,7 @@
               </p>
             </div>
           </a>
+          <span class="ancres" id="lumen" ></span>
           <a href="Project-Production/light/l-2/l-2.html">
             <img src="img/portfolio/lumena.png" alt="ampoule ecologique avec plante luminaissante"/>
             <div class="info-vignettes">
@@ -256,6 +265,7 @@
               </p>
             </div>
           </a>
+          <span class="ancres" id="delicata" ></span>
           <a href="Project-Production/light/l-3/l-3.html">
             <img src="img/portfolio/delicataa.png" alt="lampadaire urbain"/>
             <div class="info-vignettes">
@@ -297,8 +307,8 @@
           </a> -->
        
 
-        <div id="light" class="style-pp">
-          <h3 id="ancre">Realisations</h3>
+        <div id="realisations" class="style-pp">
+          <h3 >Realisations</h3>
           
           <a href="Project-Production/light/l-4/l-4.html">
             <img src="img/portfolio/pyraa.png" alt="lampe industiel en forme de pyramide"/>
@@ -318,7 +328,7 @@
               </p>
             </div>
           </a>
-          
+          <span class="ancres" id="kub" ></span>
           <a href="Project-Production/light/l-6/l-6.html">
             <img src="img/portfolio/kuba.png" alt="lampe cube en métal perforé"/>
            <div class="info-vignettes">
@@ -337,6 +347,7 @@
               </p>
             </div>
           </a>
+          <span class="ancres" id="marinoni" ></span>
           <a href="Project-Production/light/l-7/l-7.html">
             <img src="img/portfolio/marinonia.png" alt="lampe cadre de vélo"/>
             <div class="info-vignettes">
@@ -355,7 +366,7 @@
               </p>
             </div>
           </a>
-
+<span class="ancres" id="eclipse" ></span>
           <a href="Project-Production/light/l-5/l-5.html">
             <img src="img/portfolio/delicataa.png" alt="lampe jante de vélo"/>
             <div class="info-vignettes">
@@ -394,6 +405,7 @@
               </p>
             </div>
           </a>
+          <span class="ancres" id="bordeaux" ></span>
           <a href="Project-Production/Graphism/g-2/g-2.html">
             <img src="img/portfolio/bordeaux34.png" alt="bouteille de vin bordeaux ouverture simple" />
             <div class="info-vignettes">
@@ -414,20 +426,27 @@
           </a>
         </div>
       </section>
+      </main>
+     
+    
+
+      <footer>
+        <div id="copyright">
+          <p>A.D Design</p>
+          <i class="far fa-copyright"></i>
+        </div>
+
+        
+          <a href="https://lebolloch.tech/" target="_blank" id="lebolloch" rel="noopener" title="lebolloch_dev site web"
+            >Develloped by lebolloch_dev</a
+          >
+        
+      </footer>
+    
     </div>
-
-    <footer>
-      <div id="copyright">
-        <p>A.D Design</p>
-        <i class="far fa-copyright"></i>
-      </div>
-
-      
-        <a href="https://lebolloch.tech/" target="_blank" id="lebolloch" rel="noopener" title="lebolloch_dev site web"
-          >Develloped by lebolloch_dev</a
-        >
-      
-    </footer>
-    <script src="app.js"></script>
+     <div class="site-cache" id="site-cache"></div>
+   </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

@@ -1,14 +1,11 @@
-const mainMenu = document.querySelector(".mainMenu");
-const closeMenu = document.querySelector(".closeMenu");
-const openMenu = document.querySelector(".openMenu");
+(function ($) {
+  $("#icone").click(function (e) {
+    e.preventDefault();
+    $("body").toggleClass("with-sidebar");
+  });
 
-openMenu.addEventListener("click", show);
-closeMenu.addEventListener("click", close);
-
-function show() {
-  mainMenu.style.display = "flex";
-  mainMenu.style.top = "0";
-}
-function close() {
-  mainMenu.style.top = "-100%";
-}
+  $("#site-cache").click(function (e) {
+    e.preventDefault();
+    $("body").removeClass("with-sidebar");
+  });
+})(jQuery);
