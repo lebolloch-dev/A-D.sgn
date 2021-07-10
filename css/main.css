@@ -71,11 +71,12 @@ header #titre {
 header #titre #AD-logo {
   width: 50px;
   border-radius: 25px;
+  height: 50px;
 }
 
 header #titre #typo {
   width: 350px;
-  height: 35px;
+  height: 33px;
 }
 
 header .icone {
@@ -205,42 +206,42 @@ section #tags {
 
 section #tags .color-1 {
   background-color: #d1b3f4;
-  color: #9b5ae7;
+  color: #3a2256;
 }
 
 section #tags .color-2 {
   background-color: #95efd1;
-  color: #18a073;
+  color: #0b5039;
 }
 
 section #tags .color-3 {
   background-color: #efde97;
-  color: #cdac20;
+  color: #50430e;
 }
 
 section #tags .color-4 {
   background-color: #8cd39e;
-  color: #378f4d;
+  color: #15391e;
 }
 
 section #tags .color-5 {
   background-color: #9ea7dd;
-  color: #3b4aa7;
+  color: #121a4e;
 }
 
 section #tags .color-6 {
   background-color: #ffff66;
-  color: #cccc00;
+  color: #585800;
 }
 
 section #tags .color-7 {
   background-color: #efb9bc;
-  color: #dc666d;
+  color: #621e22;
 }
 
 section #tags .color-8 {
   background-color: #eaace3;
-  color: #d55bc8;
+  color: #541a4e;
 }
 
 section #tags .tag {
@@ -387,17 +388,17 @@ section a .info-vignettes .info-vignettes-details .tag-vignettes .color3 {
 
 section a .info-vignettes .info-vignettes-details .tag-vignettes .color-1 {
   background-color: #d1b3f4;
-  color: #9b5ae7;
+  color: #3a2256;
 }
 
 section a .info-vignettes .info-vignettes-details .tag-vignettes .color-2 {
   background-color: #95efd1;
-  color: #18a073;
+  color: #0b5039;
 }
 
 section a .info-vignettes .info-vignettes-details .tag-vignettes .color-3 {
   background-color: #efde97;
-  color: #cdac20;
+  color: #50430e;
 }
 
 section a .info-vignettes .info-vignettes-details .tag-vignettes .color-4 {
@@ -513,7 +514,7 @@ footer a {
   }
   header #titre #typo {
     width: 300px;
-    height: 30px;
+    height: 28px;
   }
   header .icone {
     display: -webkit-box;
@@ -668,6 +669,7 @@ footer a {
   }
   header #titre #AD-logo {
     width: 50px;
+    height: 50px;
   }
   section h3 {
     text-align: center;

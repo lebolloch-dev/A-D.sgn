@@ -31,10 +31,11 @@ header {
     #AD-logo {
       width: 50px;
       border-radius: 25px;
+      height: 50px;
     }
     #typo {
       width: 350px;
-      height: 35px;
+      height: 33px;
     }
   }
 
@@ -231,36 +232,36 @@ section {
     .color-1 {
       background-color: #d1b3f4;
       // border: 1px solid darken($color: #d1b3f4, $amount: 20);
-      color: darken($color: #d1b3f4, $amount: 20);
+      color: #3a2256;
     }
     .color-2 {
       background-color: #95efd1;
-      color: darken($color: #95efd1, $amount: 40);
+      color: #0b5039;
     }
     .color-3 {
       background-color: #efde97;
-      color: darken($color: #efde97, $amount: 30);
+      color: #50430e;
     }
     .color-4 {
       background-color: #8cd39e;
       // border: 1px solid darken($color: #8cd39e, $amount: 20);
-      color: darken($color: #8cd39e, $amount: 30);
+      color: #15391e;
     }
     .color-5 {
       background-color: #9ea7dd;
-      color: darken($color: #9ea7dd, $amount: 30);
+      color: #121a4e;
     }
     .color-6 {
       background-color: #ffff66;
-      color: darken($color: #ffff66, $amount: 30);
+      color: #585800;
     }
     .color-7 {
       background-color: #efb9bc;
-      color: darken($color: #efb9bc, $amount: 20);
+      color: #621e22;
     }
     .color-8 {
       background-color: #eaace3;
-      color: darken($color: #eaace3, $amount: 20);
+      color: #541a4e;
     }
 
     .tag {
@@ -379,15 +380,15 @@ section {
           .color-1 {
             background-color: #d1b3f4;
             // border: 1px solid darken($color: #d1b3f4, $amount: 20);
-            color: darken($color: #d1b3f4, $amount: 20);
+            color: #3a2256;
           }
           .color-2 {
             background-color: #95efd1;
-            color: darken($color: #95efd1, $amount: 40);
+            color: #0b5039;
           }
           .color-3 {
             background-color: #efde97;
-            color: darken($color: #efde97, $amount: 30);
+            color: #50430e;
           }
           .color-4 {
             background-color: #8cd39e;
@@ -487,7 +488,7 @@ footer {
       width: 365px;
       #typo {
         width: 300px;
-        height: 30px;
+        height: 28px;
       }
     }
 
@@ -649,6 +650,7 @@ footer {
       }
       #AD-logo {
         width: 50px;
+        height: 50px;
       }
     }
   }
