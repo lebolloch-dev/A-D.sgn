@@ -174,9 +174,13 @@ section #aboutMe {
   background-color: white;
   position: absolute;
   z-index: 100;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-shadow: 40px 40px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 40px 40px 30px rgba(0, 0, 0, 0.2);
 }
 
 section #aboutMe .aboutTitle {

@@ -122,8 +122,9 @@ section {
     background-color: white;
     position: absolute;
     z-index: 100;
-    display: none;
+    display: flex;
     flex-wrap: wrap;
+    box-shadow: 40px 40px 30px rgba($color: #000000, $alpha: 0.2);
 
     .aboutTitle {
       width: 100%;
