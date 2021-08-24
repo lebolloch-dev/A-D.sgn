@@ -246,6 +246,38 @@ main {
   margin-bottom: 0px;
 }
 
+.page-pp section #video-style {
+  max-width: 630px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.page-pp section #video-style video {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-pp section .promo {
+  margin: auto;
+  margin-top: 64px;
+  width: 1300px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-pp section .promo i {
+  margin: auto;
+  width: 50px;
+  color: #023859;
+}
+
+.page-pp section .promo p {
+  text-align: center;
+}
+
 @media screen and (max-width: 1399px) {
   .page-pp section .groupe-img-style .m-bottom {
     margin-bottom: 40px;

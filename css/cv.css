@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 32px;
+}
+
+body .image {
+  height: 1200px;
+}
+
+body .image img {
+  height: 100%;
+}
+/*# sourceMappingURL=cv.css.map */

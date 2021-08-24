@@ -1,0 +1,16 @@
+@import "../../scss/outils/variables";
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+
+  .image {
+    height: 1200px;
+
+    img {
+      height: 100%;
+    }
+  }
+}

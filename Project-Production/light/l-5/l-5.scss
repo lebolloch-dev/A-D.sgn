@@ -30,6 +30,36 @@
         margin-bottom: 0px;
       }
     }
+    #video-style {
+      max-width: 630px;
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+
+      video {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    .promo {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      margin: auto;
+      margin-top: 64px;
+      width: 1300px;
+      text-transform: uppercase;
+      text-align: center;
+      i {
+        margin: auto;
+        width: 50px;
+        color: $color-primary;
+      }
+      p {
+        text-align: center;
+      }
+    }
   }
 }
 

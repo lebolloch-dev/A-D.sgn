@@ -246,6 +246,11 @@ main {
   margin-bottom: 0px;
 }
 
+.page-pp section .groupe-img-style .bike {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1399px) {
   .page-pp section .groupe-img-style .m-bottom {
     margin-bottom: 40px;
