@@ -1,3 +1,20 @@
+const about = document.getElementById("about");
+
+const aboutMe = document.getElementById("aboutMe");
+
+const cross = document.getElementById("crossIcon");
+
+cross.addEventListener("click", function () {
+  aboutMe.style.display = "none";
+});
+
+about.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  window.top.scrollTo(0, 0);
+  aboutMe.style.display = "flex";
+});
+
 (function ($) {
   $("#icone").click(function (e) {
     e.preventDefault();
@@ -20,19 +37,3 @@
     }
   });
 })(jQuery);
-
-const about = document.getElementById("about");
-
-const aboutMe = document.getElementById("aboutMe");
-
-const cross = document.getElementById("crossIcon");
-
-cross.addEventListener("click", function () {
-  aboutMe.style.display = "none";
-});
-
-about.addEventListener("click", function (e) {
-  e.preventDefault();
-
-  aboutMe.style.display = "flex";
-});
