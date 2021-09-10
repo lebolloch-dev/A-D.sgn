@@ -1,20 +1,3 @@
-const about = document.getElementById("about");
-
-const aboutMe = document.getElementById("aboutMe");
-
-const cross = document.getElementById("crossIcon");
-
-cross.addEventListener("click", function () {
-  aboutMe.style.display = "none";
-});
-
-about.addEventListener("click", function (e) {
-  e.preventDefault();
-
-  window.top.scrollTo(0, 0);
-  aboutMe.style.display = "flex";
-});
-
 (function ($) {
   $("#icone").click(function (e) {
     e.preventDefault();
@@ -26,14 +9,80 @@ about.addEventListener("click", function (e) {
     $("body").removeClass("with-sidebar");
   });
 
-  $("a[href*='#']:not([href='#'])").click(function () {
-    {
-      var anchor = $(this.hash);
-      anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) + "]");
-      if (anchor.length) {
-        $("body").removeClass("with-sidebar");
-        $("html, body").animate({ scrollTop: anchor.offset().top }, 200);
-      }
-    }
+  $("#Project").click(function (e) {
+    $("body").removeClass("with-sidebar");
   });
+
+  $("#Realisation").click(function (e) {
+    $("body").removeClass("with-sidebar");
+  });
+
+  $("#Graphism").click(function (e) {
+    $("body").removeClass("with-sidebar");
+  });
+
+  $("#about").click(function (e) {
+    $("body").removeClass("with-sidebar");
+    $(".site-pusher").toggleClass("cache-about");
+    $("#page").css({ "z-index": "auto" });
+    $("#aboutMe").css({ display: "flex" });
+    $("#aboutMe").animate(
+      {
+        opacity: 1,
+        top: 0,
+      },
+      1000,
+      function () {}
+    );
+  });
+
+  $("#site-x").click((e) => {
+    e.preventDefault();
+    $(".site-pusher").removeClass("cache-about");
+    $("#aboutMe").css({ display: "none" });
+    $("#page").css({ "z-index": "-1" });
+    $("#aboutMe").animate(
+      {
+        opacity: 0,
+        top: -923,
+      },
+      1000,
+      function () {}
+    );
+  });
+
+  $("#Book").click(function (e) {
+    $("body").removeClass("with-sidebar");
+    $(".site-pusher").toggleClass("cache-about");
+    $("#page").css({ "z-index": "auto" });
+    $("#book").css({ display: "flex" });
+
+    $("#book").animate(
+      {
+        opacity: 1,
+        top: 0,
+      },
+      1000,
+      function () {}
+    );
+    $("html").css({ overflow: "hidden" });
+  });
+
+  $("#site-x").click((e) => {
+    e.preventDefault();
+    $(".site-pusher").removeClass("cache-about");
+    $("#book").css({ display: "none" });
+    $("#page").css({ "z-index": "-1" });
+    $("#book").animate(
+      {
+        opacity: 0,
+        top: -923,
+      },
+      1000,
+      function () {}
+    );
+    $("html").css({ overflow: "auto" });
+  });
+
+  $("#magazine").turn({ gradients: true, acceleration: true });
 })(jQuery);

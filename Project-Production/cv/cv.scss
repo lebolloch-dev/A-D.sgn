@@ -1,7 +1,7 @@
 @import "../../scss/outils/variables";
 
 body {
-  background-color: black;
+  background-color: $color-background-primary;
   display: flex;
   justify-content: center;
   padding: 32px;
