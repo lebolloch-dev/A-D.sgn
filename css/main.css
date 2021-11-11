@@ -198,7 +198,6 @@ header .mainMenu ul li a .fa-envelope:hover {
 #aboutMe h3 {
   margin: 40px 0;
   color: #023859;
-  font-weight: 500;
   font-size: 1.8em;
   padding-top: 40px;
   font-family: "Poppins", sans-serif;
@@ -213,22 +212,21 @@ header .mainMenu ul li a .fa-envelope:hover {
 
 #aboutMe .aboutTitle .fa-times-circle {
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 0;
+  top: -42px;
   font-size: 2em;
   color: #023859;
 }
 
 #aboutMe .aboutTitle h3 {
   text-align: center;
-  font-weight: bolder;
   font-size: 3em;
 }
 
 #aboutMe .description {
   width: 50%;
   padding: 32px;
-  background-color: #96c6d9;
+  background-color: #addbea;
   border-bottom-left-radius: 20px;
 }
 
@@ -239,14 +237,16 @@ header .mainMenu ul li a .fa-envelope:hover {
 }
 
 #aboutMe .photoProfil {
-  width: 30%;
-  height: 50%;
+  width: 50%;
   background-color: white;
 }
 
 #aboutMe .photoProfil img {
   height: 100%;
   width: 100%;
+  border-bottom-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section {
@@ -272,6 +272,18 @@ section #book {
   opacity: 0;
 }
 
+section #book #crossIcon {
+  right: -10px;
+  top: -42px;
+  position: absolute;
+}
+
+section #book #crossIcon .fa-times-circle {
+  position: absolute;
+  font-size: 2em;
+  color: #023859;
+}
+
 section #book #magazine {
   margin: auto;
   display: -webkit-box;
@@ -290,6 +302,19 @@ section #book #magazine img {
 
 section #book #magazine .turn-page {
   background-color: #ccc;
+}
+
+section #book #arrow {
+  position: absolute;
+  width: 60px;
+  bottom: -39px;
+  right: -34px;
+  z-index: -100;
+}
+
+section #book #arrow img {
+  width: 100%;
+  height: 100%;
 }
 
 section h2 {
@@ -314,7 +339,7 @@ section h2:after {
   right: 30px;
   height: 2px;
   bottom: -5px;
-  background: #96c6d9;
+  background: #addbea;
 }
 
 section #tags {
@@ -479,6 +504,7 @@ section a .info-vignettes .info-vignettes-details h4 {
   position: relative;
   margin: 0px;
   font-weight: normal;
+  white-space: nowrap;
 }
 
 section a .info-vignettes .info-vignettes-details h4:after {
@@ -488,7 +514,7 @@ section a .info-vignettes .info-vignettes-details h4:after {
   right: 0px;
   height: 1px;
   bottom: 8px;
-  background: #96c6d9;
+  background: #addbea;
 }
 
 section a .info-vignettes .info-vignettes-details .tag-vignettes {
@@ -613,7 +639,7 @@ footer #copyright p {
 footer a {
   margin: 0px;
   color: #023859;
-  font-size: 1.2em;
+  font-size: 0.8em;
   font-family: "Poppins", sans-serif;
 }
 

@@ -7,10 +7,10 @@ body {
   padding: 32px;
 
   .image {
-    height: 1200px;
+    max-width: 1200px;
 
     img {
-      height: 100%;
+      width: 100%;
     }
   }
 }

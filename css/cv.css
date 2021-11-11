@@ -10,10 +10,10 @@ body {
 }
 
 body .image {
-  height: 1200px;
+  max-width: 1200px;
 }
 
 body .image img {
-  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=cv.css.map */
